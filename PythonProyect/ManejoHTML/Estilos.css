@@ -1,0 +1,12 @@
+/* Definición de los estilos*/
+body{
+    background-color: black;
+    color: white;
+}
+/* Estilos para los links */
+a{
+    color: hotpink;
+}
+a:hover{
+color:yellow
+}
