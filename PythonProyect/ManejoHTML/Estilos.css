@@ -10,3 +10,12 @@ a{
 a:hover{
 color:yellow
 }
+
+/*Clase - Selectores*/
+/*Si se quiere aplicar a algun componente se debe indicar, como " p "*/
+.texto-centrado{
+    text-align: center
+    }
+.titulo{
+    font-size: 200%
+    }
