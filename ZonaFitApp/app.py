@@ -1,11 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/") # url: http://localhot:500/
+titulo_app = "Zona Fit "
+
+@app.route("/") # url: http://localhost:5000/
+@app.route("/index.html")   # http://localhost:5000/index.html
 def inicio():
     app.logger.debug("Entramos al path de inicio /")
-    return "<p> Hola mundo"
+    return render_template("index.html", titulo=titulo_app)
 
 if __name__ == "__main__":
     app.run(debug=True)
